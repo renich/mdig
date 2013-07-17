@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+# public resolvers
+# last update: Wed Jul 17 12:16:42 CDT 2013
+resolvers = { 
+    'Comodo Secure DNS'     => '8.26.56.26',
+    'DNS Advantage'         => '156.154.70.1',
+    'Dyn'                   => '216.146.35.35',
+    'Google'                => '8.8.8.8',
+    'Hurricane Electric'    => '74.82.42.42',
+    'Level3'                => '209.244.0.3',
+    'Norton ConnectSafe'    => '198.153.192.40',
+    'OpenDNS Home'          => '208.67.222.222',
+    'SafeDNS'               => '195.46.39.39',
+    'SmartViper'            => '208.76.50.50',
+    'censurfridns.dk'       => '89.233.43.71',
+    'puntCAT'               => '109.69.8.51',
+}
+
+resolvers.each { |k, v|
+    puts 'Digging @ ' + k.to_s
+    system( "dig @#{v.to_s} #{ARGV.join( ' ' )}" )
+}
+
+exit 0
