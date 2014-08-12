@@ -12,7 +12,9 @@ Then, just put mdig in ~/bin or /usr/local/bin
 
 Examples
 ========
-```bash
+
+.. code-block:: bash
+
     # short results
     mdig +short thepiratebay.se
 
@@ -21,4 +23,3 @@ Examples
 
     # reverse lookup
     mdig +short -x 8.8.8.8
-```
