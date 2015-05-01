@@ -1,28 +1,29 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env ruby 
 
 # public resolvers
-# last update: 20140812
+# last update: 20150501
 resolvers = { 
-    'Chaos Computer Club Berlin' => '213.73.91.35',
-    'ClaraNet1' => '212.82.225.7',
-    'ClaraNet2' => '212.82.226.212',
-    'Comodo Secure DNS1' => '156.154.70.22',
-    'Comodo Secure DNS2' => '156.154.71.22',
-    'Comodo Secure DNS3' => '8.26.56.26',
-    'DNS Advantage1' => '156.154.70.1',
-    'DNS Advantage2' => '156.154.71.1',
-    'Dyn' => '216.146.35.35',
-    'Google1' => '8.8.8.8',
-    'Google2' => '8.8.4.4',
-    'Hurricane Electric' => '74.82.42.42',
-    'Level3' => '209.244.0.3',
-    'Norton ConnectSafe' => '198.153.192.40',
-    'OpenDNS1' => '208.67.220.220',
-    'OpenDNS2' => '208.67.222.222',
-    'SafeDNS' => '195.46.39.39',
-    'SmartViper' => '208.76.50.50',
-    'censurfridns.dk' => '89.233.43.71',
-    'puntCAT' => '109.69.8.51',
+    CCCB: '213.73.91.35',
+    CCDNS1: '156.154.70.22',
+    CSDNS2: '156.154.71.22',
+    CSDNS3: '8.26.56.26',
+    ClaraNet1: '212.82.225.7',
+    ClaraNet2: '212.82.226.212',
+    DA1: '156.154.70.1',
+    DA2: '156.154.71.1',
+    Dyn: '216.146.35.35',
+    Google1: '8.8.8.8',
+    Google2: '8.8.4.4',
+    HE: '74.82.42.42',
+    Level31: '209.244.0.4',
+    Level32: '209.244.0.3',
+    NCS: '198.153.192.40',
+    OpenDNS1: '208.67.220.220',
+    OpenDNS2: '208.67.222.222',
+    SafeDNS: '195.46.39.39',
+    SmartViper: '208.76.50.50',
+    censurfridns: '89.233.43.71',
+    puntCAT: '109.69.8.51',
 }
 
 threads = []
@@ -46,5 +47,3 @@ Provider: #{p}
 EOF
 
 }
-
-exit( 0 )
