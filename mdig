@@ -32,7 +32,7 @@ threads = []
 @results = []
 resolvers.each { |k, v|
     threads << Thread.new {
-        m = "Digging @ #{k}"
+        m = "#{k}"
         r = %x( dig @#{v.to_s} #{ARGV.join( ' ' )} )
 
         @results << [ m, r ]
