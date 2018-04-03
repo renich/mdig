@@ -1,9 +1,12 @@
-#!/usr/bin/env ruby 
+#!/usr/bin/env ruby
 
 # public resolvers
-# last update: 20150501
-resolvers = { 
-    CCCB: '213.73.91.35',
+# last update: 20180402
+resolvers = {
+	CloudFlare1: '1.1.1.1',
+	CloudFlare2: '1.0.0.1',
+	Comodo1: '8.26.56.26',
+	Comodo2: '8.20.247.20',
     CCDNS1: '156.154.70.22',
     CSDNS2: '156.154.71.22',
     CSDNS3: '8.26.56.26',
@@ -21,7 +24,6 @@ resolvers = {
     OpenDNS1: '208.67.220.220',
     OpenDNS2: '208.67.222.222',
     SafeDNS: '195.46.39.39',
-    SmartViper: '208.76.50.50',
     censurfridns: '89.233.43.71',
     puntCAT: '109.69.8.51',
 }
@@ -47,3 +49,4 @@ Provider: #{p}
 EOF
 
 }
+
